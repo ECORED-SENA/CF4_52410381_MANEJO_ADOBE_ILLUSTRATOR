@@ -15,52 +15,194 @@ export default {
   components: { Actividad },
   data: () => ({
     cuestionario: {
-      tema: 'Nombre del componente formativo',
+      tema: 'Preparación de documentos en Adobe Illustrator',
       titulo: 'Cuestionario',
-      introduccion: '<b> Objetivo:</b> Texto de Word',
+      introduccion:
+        'Evaluar el conocimiento sobre los procesos de creación, configuración, importación, exportación y herramientas clave en Adobe Illustrator.',
       barajarPreguntas: false,
       preguntas: [
         {
           id: 1,
           texto:
-            'Texto pregunta 1 con <strong>Negrita</strong> <em>Itálica</em>.',
-          imagen: require('@/assets/componentes/pregunta_1.svg'),
+            '¿Cuál es el primer paso al crear un nuevo documento en Adobe Illustrator? ',
+          imagen: require('@/assets/actividad/pregunta_1.png'),
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: '<strong>Negrita</strong> <em>Itálica</em>',
+              texto: 'Seleccionar las opciones de exportación. ',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Definir la resolución del documento. ',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Configurar las mesas de trabajo. ',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Determinar el propósito del proyecto. ',
               esCorrecta: true,
             },
-            { id: 'b', texto: 'Opción 2', esCorrecta: false },
-            { id: 'c', texto: 'Opción 3', esCorrecta: false },
-            { id: 'd', texto: 'Opción 4', esCorrecta: false },
           ],
           mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
           mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
         },
         {
           id: 2,
-          texto: 'Texto pregunta 2',
-          imagen: require('@/assets/componentes/pregunta_2.png'),
+          texto:
+            '¿Qué opción permite guardar un archivo de Adobe Illustrator como un PDF? ',
+          imagen: require('@/assets/actividad/pregunta_2.png'),
           barajarRespuestas: true,
           opciones: [
-            { id: 'a', texto: 'Falso', esCorrecta: true },
-            { id: 'b', texto: 'Verdadero', esCorrecta: false },
+            {
+              id: 'a',
+              texto: 'Archivo > Exportar como PDF. ',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Archivo > Guardar como PDF. ',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Archivo > Guardar una copia y seleccionar PDF. ',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto: 'Archivo > Empaquetar como PDF. ',
+              esCorrecta: false,
+            },
           ],
           mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
           mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
         },
         {
           id: 3,
-          texto: 'Texto pregunta 3',
-          imagen: require('@/assets/componentes/pregunta_3.png'),
-          barajarRespuestas: false,
+          texto:
+            '¿Qué formato de archivo en Adobe Illustrator permite la compresión sin pérdidas y es común para la web? ',
+          imagen: require('@/assets/actividad/pregunta_3.png'),
+          barajarRespuestas: true,
           opciones: [
-            { id: 'a', texto: 'Opción 1', esCorrecta: true },
-            { id: 'b', texto: 'Opción 2', esCorrecta: false },
-            { id: 'c', texto: 'Opción 3', esCorrecta: false },
-            { id: 'd', texto: 'Todas las anteriores', esCorrecta: false },
+            { id: 'a', texto: 'JPEG. ', esCorrecta: false },
+            { id: 'b', texto: 'PNG. ', esCorrecta: false },
+            { id: 'c', texto: 'WebP. ', esCorrecta: true },
+            { id: 'd', texto: 'TIFF. ', esCorrecta: false },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 4,
+          texto:
+            '¿Qué opción de color es adecuada para proyectos impresos en Adobe Illustrator? ',
+          imagen: require('@/assets/actividad/pregunta_4.png'),
+          barajarRespuestas: true,
+          opciones: [
+            { id: 'a', texto: 'RGB. ', esCorrecta: false },
+            { id: 'b', texto: 'CMYK. ', esCorrecta: true },
+            { id: 'c', texto: 'Escala de grises. ', esCorrecta: false },
+            { id: 'd', texto: 'Blanco y negro. ', esCorrecta: false },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 5,
+          texto:
+            '¿Qué herramienta en Adobe Illustrator se utiliza para dividir diseños en sectores para la web? ',
+          imagen: require('@/assets/actividad/pregunta_1.png'),
+          barajarRespuestas: true,
+          opciones: [
+            { id: 'a', texto: 'Herramienta Sector. ', esCorrecta: true },
+            { id: 'b', texto: 'Herramienta Tijeras. ', esCorrecta: false },
+            { id: 'c', texto: 'Herramienta Cuchilla. ', esCorrecta: false },
+            { id: 'd', texto: 'Herramienta Borrador. ', esCorrecta: false },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 6,
+          texto:
+            '¿Qué opción debe activarse al importar una imagen para crear un enlace al archivo original? ',
+          imagen: require('@/assets/actividad/pregunta_2.png'),
+          barajarRespuestas: true,
+          opciones: [
+            { id: 'a', texto: 'Incrustar. ', esCorrecta: false },
+            { id: 'b', texto: 'Enlazar. ', esCorrecta: true },
+            {
+              id: 'c',
+              texto: 'Mostrar opciones de importación. ',
+              esCorrecta: false,
+            },
+            { id: 'd', texto: 'Incluir transparencia. ', esCorrecta: false },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 7,
+          texto:
+            '¿Qué herramienta en Adobe Illustrator permite borrar áreas específicas de un objeto? ',
+          imagen: require('@/assets/actividad/pregunta_3.png'),
+          barajarRespuestas: true,
+          opciones: [
+            { id: 'a', texto: 'Herramienta Tijeras. ', esCorrecta: false },
+            { id: 'b', texto: 'Herramienta Sector. ', esCorrecta: false },
+            { id: 'c', texto: 'Herramienta Borrador. ', esCorrecta: true },
+            { id: 'd', texto: 'Herramienta Lazo. ', esCorrecta: false },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 8,
+          texto:
+            '¿Qué formato de archivo es recomendado para mantener la calidad de un diseño vectorial al exportarlo para impresión? ',
+          imagen: require('@/assets/actividad/pregunta_4.png'),
+          barajarRespuestas: true,
+          opciones: [
+            { id: 'a', texto: 'PNG. ', esCorrecta: false },
+            { id: 'b', texto: 'TIFF. ', esCorrecta: false },
+            { id: 'c', texto: 'PDF. ', esCorrecta: true },
+            { id: 'd', texto: 'JPEG.', esCorrecta: false },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 9,
+          texto:
+            '¿Cuál de las siguientes opciones se encuentra en el panel de Calco de imagen? ',
+          imagen: require('@/assets/actividad/pregunta_1.png'),
+          barajarRespuestas: true,
+          opciones: [
+            { id: 'a', texto: 'Escala de grises. ', esCorrecta: true },
+            { id: 'b', texto: 'Degradado radial. ', esCorrecta: false },
+            { id: 'c', texto: 'Transparencia automática. ', esCorrecta: false },
+            { id: 'd', texto: 'Fusionar capas. ', esCorrecta: false },
+          ],
+          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+        },
+        {
+          id: 10,
+          texto:
+            '¿Qué opción de previsualización en Adobe Illustrator simula la apariencia rasterizada sin alterar el contenido vectorial? ',
+          imagen: require('@/assets/actividad/pregunta_2.png'),
+          barajarRespuestas: true,
+          opciones: [
+            { id: 'a', texto: 'Píxel. ', esCorrecta: true },
+            { id: 'b', texto: 'Sobreimpresión. ', esCorrecta: false },
+            { id: 'c', texto: 'Vectorial por defecto. ', esCorrecta: false },
+            { id: 'd', texto: 'Rasterizado CMYK. ', esCorrecta: false },
           ],
           mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
           mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',

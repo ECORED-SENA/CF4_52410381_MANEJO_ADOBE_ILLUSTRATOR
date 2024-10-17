@@ -1,17 +1,22 @@
 export default {
   global: {
-    componenteFormativo: 'NOMBRE DEL COMPONENTE FORMATIVO',
-    descripcionCurso: 'BREVE DESCRIPCIÓN',
-    imagenBannerPrincipal: require('@/assets/curso/portada/banner-princiapal.svg'),
+    componenteFormativo: 'Preparación de documentos en Adobe Illustrator',
+    descripcionCurso:
+      'El componente formativo proporciona una guía para la preparación de documentos en Adobe Illustrator, abarcando la creación y configuración de nuevos archivos, la importación de imágenes, la exportación a diferentes formatos, y el uso de herramientas de corte y sector. También se aborda cómo empaquetar proyectos y crear archivos PDF, destacando la importancia de optimizar los flujos de trabajo para obtener productos finales eficientes.',
+    imagenBannerPrincipal: require('@/assets/curso/portada/banner-principal.png'),
     fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.png'),
     imagenesDecorativasBanner: [
       {
         clases: ['banner-principal-decorativo-1', 'd-none', 'd-lg-block'],
-        imagen: require('@/assets/curso/portada/banner-principal-decorativo-1.svg'),
+        imagen: require('@/assets/curso/portada/banner-principal-decorativo-1.png'),
       },
       {
         clases: ['banner-principal-decorativo-2'],
-        imagen: require('@/assets/curso/portada/banner-principal-decorativo-2.svg'),
+        imagen: require('@/assets/curso/portada/banner-principal-decorativo-2.png'),
+      },
+      {
+        clases: ['banner-principal-decorativo-3'],
+        imagen: require('@/assets/curso/portada/banner-principal-decorativo-3.png'),
       },
     ],
   },
@@ -31,28 +36,67 @@ export default {
       {
         nombreRuta: 'tema1',
         numero: '1',
-        titulo: 'Titulo de primer nivel',
+        titulo:
+          'Creación y configuración de un nuevo documento en Adobe Illustrator',
         desarrolloContenidos: true,
         subMenu: [
           {
             numero: '1.1',
-            titulo: 'Titulo de segundo nivel',
+            titulo:
+              'Crear y guardar ajustes prestablecidos de documentos personalizados',
             hash: 't_1_1',
           },
         ],
       },
-
       {
         nombreRuta: 'tema2',
         numero: '2',
-        titulo: 'Titulo de primer nivel',
+        titulo: 'Importación de imágenes a Adobe Illustrator',
         desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '2.1',
+            titulo: 'Colocación (importación) de archivos',
+            hash: 't_2_1',
+          },
+          {
+            numero: '2.2',
+            titulo: 'Calco de imagen',
+            hash: 't_2_2',
+          },
+        ],
       },
       {
         nombreRuta: 'tema3',
         numero: '3',
-        titulo: 'Titulo de primer nivel',
+        titulo: 'Exportar documentos',
         desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '3.1',
+            titulo: 'Opciones de exportación de WebP',
+            hash: 't_3_1',
+          },
+        ],
+      },
+      {
+        nombreRuta: 'tema4',
+        numero: '4',
+        titulo: 'Herramientas de sector y corte',
+        desarrolloContenidos: true,
+      },
+      {
+        nombreRuta: 'tema5',
+        numero: '5',
+        titulo: 'Empaquetar proyectos',
+        desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '5.1',
+            titulo: 'Creación de un archivo PDF',
+            hash: 't_5_1',
+          },
+        ],
       },
     ],
     subMenu: [
@@ -102,32 +146,70 @@ export default {
   },
   complementario: [
     {
-      tema: '',
-      referencia: '',
-      tipo: '',
-      link: 'https://www.google.com/',
-    },
-    {
-      tema: '',
-      referencia: '',
-      tipo: '',
-      descarga: '/downloads/prueba.pdf',
+      tema: 'Preparación de documentos en Adobe Illustrator ',
+      referencia:
+        'Ende Studio | Diseño Gráfico para Principiantes. (2021). <em>Cómo CREAR un NUEVO DOCUMENTO en Adobe ILLUSTRATOR | ILLUSTRATOR tutorial | PERFIL documento</em> (video). YouTube. ',
+      tipo: 'Video',
+      link: 'https://www.youtube.com/watch?v=Qk1FZMNaflc  ',
     },
   ],
   glosario: [
     {
-      termino: 'Término',
-      significado: 'Texto de la definición',
+      termino: 'Archivo PDF',
+      significado:
+        'formato de archivo que conserva las fuentes, imágenes y composición de los documentos creados en diversas plataformas y aplicaciones. ',
     },
     {
-      termino: '<em>Término con extranjerismo</em>',
-      significado: 'Definición',
+      termino: 'Calco de imagen',
+      significado:
+        'proceso de vectorización de una imagen de mapa de bits, simplificando o transformando su apariencia. ',
+    },
+    {
+      termino: 'Colocar',
+      significado:
+        'opción utilizada para importar archivos en Adobe Illustrator, compatible con varios formatos externos. ',
+    },
+    {
+      termino: 'Documento personalizado',
+      significado:
+        'archivo creado con configuraciones específicas adaptadas a las necesidades del proyecto. ',
+    },
+    {
+      termino: 'Empaquetar',
+      significado:
+        'proceso que recopila archivos utilizados en un proyecto, incluyendo imágenes y fuentes, para su distribución o intercambio. ',
+    },
+    {
+      termino: 'Enlazar',
+      significado:
+        'método de importación en el que las imágenes permanecen externas al documento, reduciendo su tamaño. ',
+    },
+    {
+      termino: 'Exportar',
+      significado:
+        'proceso de guardar un archivo en diversos formatos según su uso, ya sea para impresión o medios digitales. ',
+    },
+    {
+      termino: 'Herramienta de corte',
+      significado:
+        'herramienta utilizada para dividir objetos o borrar partes de un diseño en Illustrator. ',
+    },
+    {
+      termino: 'Previsualización',
+      significado:
+        'visualización previa del documento, simulando su apariencia final según el modo seleccionado. ',
+    },
+    {
+      termino: 'WebP',
+      significado:
+        'formato de imagen moderno que ofrece compresión superior, utilizado principalmente en la web para optimizar la carga de imágenes. ',
     },
   ],
   referencias: [
     {
-      referencia: '',
-      link: '',
+      referencia:
+        'Adobe. (2024). Presentación de la Guía del usuario de Illustrator.',
+      link: 'https://helpx.adobe.com/co/illustrator/user-guide.html ',
     },
   ],
   creditos: [
@@ -165,7 +247,7 @@ export default {
           centro: 'Centro de Servicios de Salud - Regional Antioquia',
         },
         {
-          nombre: 'Nombre responsable',
+          nombre: 'Luis Jesús Pérez Madariaga',
           cargo: 'Desarrollador <i>full stack</i>',
           centro: 'Centro de Servicios de Salud - Regional Antioquia',
         },
