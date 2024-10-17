@@ -2,7 +2,7 @@
 
 ## **Enlace GitHubPages**
 
-[https://ecored-sena.github.io/ECORED_TEMPLATE_REPO/](https://ecored-sena.github.io/ECORED_TEMPLATE_REPO/)
+[https://ecored-sena.github.io/CF4_52410381_MANEJO_ADOBE_ILLUSTRATOR/](https://ecored-sena.github.io/CF4_52410381_MANEJO_ADOBE_ILLUSTRATOR/)
 
 #
 
