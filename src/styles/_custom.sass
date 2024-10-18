@@ -91,14 +91,14 @@
   color: #fff
 
 .acordion .tarjeta
-  background-color: #DAE0DA
+  background-color: #D6D8FC
 .acordion .tarjeta.acordion__activo
-  background-color: #FBE9CC
+  background-color: #FFD69B
 .acordion .tarjeta.acordion__activo *
   color: #12263F
 .acordion__accion__btn--a
-  border: 1px solid #8D1CE7
-  background-color: #8D1CE7
+  border: 1px solid #4546DF
+  background-color: #4546DF
 .acordion__accion__btn--a i
   color: #fff !important
 
@@ -142,3 +142,51 @@
   .cont_decorativo:before
     height: 100%
     top: 0
+
+/***************Tema 1****************/
+.cont_1_1, .cont_1_1 *
+  position: relative
+.cont_1_1:before
+  position: absolute
+  content: ''
+  width: 115%
+  height: 100%
+  left: -8%
+  top: 0
+  background: rgb(255,255,255)
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(234,235,253,1) 25%, rgba(234,235,253,1) 80%, rgba(255,255,255,0) 100%)
+
+.cont_1_2
+  background-image: url(../assets/curso/tema1/4.png)
+  background-size: cover
+
+/*********************Tema 2**************/
+.cont_2_1
+  background-image: url(../assets/curso/tema2/18.png)
+  background-size: cover
+
+.cont_2_2, .cont_2_2 *
+  position: relative
+.cont_2_2:before
+  position: absolute
+  content: ''
+  width: 115%
+  height: 80%
+  left: -8%
+  top: 10%
+  bottom: 10%
+  background: rgb(255,255,255)
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(234,235,253,1) 25%, rgba(234,235,253,1) 80%, rgba(255,255,255,0) 100%)
+
+.cont_2_3
+  background-color: #D6D8FC
+  border-radius: 10px
+  p:first-child
+    margin: 0 auto
+    background-color:#FF7650
+    max-width: fit-content
+  figure
+    text-align: center
+  img
+    display: inline
+    max-width: 50px
