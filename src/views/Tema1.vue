@@ -9,7 +9,7 @@
     
     .row
       .col-lg-5.mb-4.mb-lg-0(data-aos="fade-right")
-        p Cuando se va a crear un documento en Illustrator, lo primero que se debe considerar es el propósito del proyecto a realizar, debido que esto dicta el tipo de documento a preparar y sus características. Si el objetivo del proyecto es la web, seguro ha de requerir un modo de color diferente, como si fuera uno destinado para impresión offset, lo mismo ocurre con el tamaño y las unidades de medida.
+        p Cuando se va a crear un documento en Illustrator, lo primero que se debe considerar es el propósito del proyecto a realizar, debido que esto dicta el tipo de documento a preparar y sus características. Si el objetivo del proyecto es la web, seguro ha de requerir un modo de color diferente, como si fuera uno destinado para impresión #[em offset], lo mismo ocurre con el tamaño y las unidades de medida.
         .p-3.mt-4(style="background-color:#FFEACC;")
           .row
             .col-auto.d-none.d-md-block(style="place-self:center;" data-aos="zoom-in-left" data-aos-duration="650")

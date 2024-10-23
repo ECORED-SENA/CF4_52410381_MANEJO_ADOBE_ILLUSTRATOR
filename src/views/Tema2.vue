@@ -12,7 +12,7 @@
         :style="{'background-image': `url(${require('@/assets/curso/tema2/1.svg')})`}"
       )
       .bloque-texto-g__texto.p-4
-        p.mb-0 Adobe Illustrator brinda la opción de importar imágenes vectoriales o de mapas de bits, lo que da la ventaja de comenzar con un gran avance cualquier proyecto de diseño. Este software identifica los formatos de imágenes más utilizados, además, tiene especial facilidad para importar y exportar documentos con formatos específicos de programas de la misma casa matriz. Esto hace que sea fácil importar y exportar, desde la ventana de diálogo o simplemente copiando y pegando.
+        p.mb-0 Adobe Illustrator brinda la opción de importar imágenes vectoriales o de mapas de #[em bits], lo que da la ventaja de comenzar con un gran avance cualquier proyecto de diseño. Este #[em software] identifica los formatos de imágenes más utilizados, además, tiene especial facilidad para importar y exportar documentos con formatos específicos de programas de la misma casa matriz. Esto hace que sea fácil importar y exportar, desde la ventana de diálogo o simplemente copiando y pegando.
     
     Separador
 
@@ -60,7 +60,7 @@
     .titulo-segundo(data-aos="flip-up")
       h2#t_2_2 2.2 Calco de imagen
     
-    p(data-aos="fade-left") Es posible vectorizar una imagen de mapa de bits si por ejemplo se desea que un diseño nuevo se base en una imagen existente. Para eso se usa el comando Calco de imagen que aparece en la barra de control.
+    p(data-aos="fade-left") Es posible vectorizar una imagen de mapa de #[em bits] si por ejemplo se desea que un diseño nuevo se base en una imagen existente. Para eso se usa el comando Calco de imagen que aparece en la barra de control.
 
     .cont_2_2.mt-5
       .col-xl-10.m-auto
