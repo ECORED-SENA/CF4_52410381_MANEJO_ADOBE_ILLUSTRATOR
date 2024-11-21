@@ -9,7 +9,7 @@
     
     .row
       .col-lg-9(data-aos="fade-up")
-        p Las herramientas de Sector sirven para dividir los diseños en sectores que permiten la exportación para la web, ya sea de tablas HTML o de las imágenes que las contendrían.
+        p Las herramientas de #[b Sector] sirven para dividir los diseños en sectores que permiten la exportación para la web, ya sea de tablas HTML o de las imágenes que las contendrían.
         p Las herramientas de #[strong Corte] sirven para dividir objetos o borrar parte de ellos como un todo.
         .p-4(style="background-color:#FEEAD2;")
           .row.mb-3
@@ -41,7 +41,7 @@
               figure
                 img(src="@/assets/curso/tema4/5.svg")
             .col(style="place-self:center;")
-              p.mb-0 Se cortan objetos y trazados, haciendo sobre ellos una línea utilizando la herramienta Cuchilla .
+              p.mb-0 Se cortan objetos y trazados, haciendo sobre ellos una línea utilizando la herramienta Cuchilla.
       .col-lg-3.d-none.d-lg-block(data-aos="fade-left")
         figure
           img(src="@/assets/curso/tema4/6.png")
